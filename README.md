@@ -92,7 +92,7 @@ sudo apt install mysql-client -y
 
 To upload the sqldump file on the EC2 isntance, we first connect to the ec2 machine through our Local Machine using SSH Commands:
 ```
-ssh -i "<Path to Pem File>" ubuntu@<publicIP>
+ssh -i "<"Path to Pem File">" ubuntu@<publicIP>
 ```
 
 Second, Upload the Dump File to EC2
@@ -102,6 +102,20 @@ scp -i <"Path to Pem File"> path\to\your_dump_file.sql eubuntu@<public ip>:~
 
 <img width="1438" alt="Screenshot 2024-09-19 at 8 44 42 PM" src="https://github.com/user-attachments/assets/ffd3d003-878c-4ad1-b241-718dd60554e4">
 
+Third, upload the dump file to RDS:
+```
+mysql -h <db endpoint> -u your-username -p
+EXIT;
+mysql -h <db endpoint> -u your-username -p < coffee_database_dump.sql
+```
+*Note: You might need to remove some advanced commands, due to some permission issue. (I recommend using GithHub Copilot/ChatGPT/Phind for solving the error) 
 
+<img width="1080" alt="Screenshot 2024-09-19 at 9 23 00 PM" src="https://github.com/user-attachments/assets/09461307-3b1c-48f5-b854-6812e66a189d">
+
+Now the databse is ready.
+
+## Phase 4: Creating a development environment and checking code into a Git repository
+
+###Task 4.1: Create an AWS Cloud9 IDE as your work environment
 
 
