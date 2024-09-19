@@ -83,11 +83,12 @@ EC2 Instance Details:
 Connect to the EC2 Instance and run the following commands:
 ```
 sudo apt update
-sudo apt install nmap <db endpoint> - used to check to verify that the database can be reached from the rdsdatabaseaccess instance on the standard MySQL port number.
+sudo apt install nmap
+nmap -Pn <db endpoint> - used to check to verify that the database can be reached from the rdsdatabaseaccess instance on the standard MySQL port number.
 sudo apt install mysql-client -y
 ```
 
-
+<img width="808" alt="Screenshot 2024-09-19 at 8 23 00 PM" src="https://github.com/user-attachments/assets/37150d99-e96e-4a5b-89d2-624bee1dc66d">
 
 
 
