@@ -33,3 +33,24 @@ We have also been challenged to develop a CI/CD pipeline to automatically deploy
 
 <img width="719" alt="Screenshot 2024-09-11 at 7 17 04 PM" src="https://github.com/user-attachments/assets/f1f3752e-09ef-4b28-b091-173f955d5e10">
 
+
+
+
+
+## Phase 2: Setup the networking & Security Groups required
+
+The step will look like this:
+
+### Networking
+
+Create a VPC with 2 Public & 2 Private subnets and 1 Internet Gateway.
+<img width="1145" alt="Screenshot 2024-09-19 at 7 01 12 PM" src="https://github.com/user-attachments/assets/d4314e91-0d80-470b-a9ea-fe40dd900eb6">
+
+### Security Groups
+Security Group - RDS
+<img width="1368" alt="Screenshot 2024-09-19 at 7 08 26 PM" src="https://github.com/user-attachments/assets/9a4b32be-3a21-4823-ae4c-2a10eb5c4566">
+
+Security Group - EC2
+<img width="1387" alt="Screenshot 2024-09-19 at 7 12 52 PM" src="https://github.com/user-attachments/assets/0c80eed5-1bb8-4f4e-a30e-9bd217bffdc1">
+
+## Phase 3: Setup the RDS Database
