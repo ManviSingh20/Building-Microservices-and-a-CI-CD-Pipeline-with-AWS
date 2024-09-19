@@ -72,5 +72,27 @@ Setup The RDS Database with following configurations:
 ## Configure database dump on RDS
 
 Now we have a database dump of the required database, we need to configure it on RDS
-
 To access the RDS we will create a EC2 Instance and Install MySQL Client on it.
+
+EC2 Instance Details:
+
+<img width="658" alt="Screenshot 2024-09-19 at 8 17 12 PM" src="https://github.com/user-attachments/assets/2dc4ea57-ef5f-46d2-873f-73ee16b5e1a1">
+
+*Note: For The Security Group Choose EC2Node Security Group
+
+Connect to the EC2 Instance and run the following commands:
+```
+sudo apt update
+sudo apt install nmap <db endpoint> - used to check to verify that the database can be reached from the rdsdatabaseaccess instance on the standard MySQL port number.
+sudo apt install mysql-client -y
+```
+
+
+
+
+
+
+
+
+
+
