@@ -116,6 +116,6 @@ Now the databse is ready.
 
 ## Phase 4: Creating a development environment and checking code into a Git repository
 
-###Task 4.1: Create an AWS Cloud9 IDE as your work environment
+### Task 4.1: Create an AWS Cloud9 IDE as your work environment
 
 
