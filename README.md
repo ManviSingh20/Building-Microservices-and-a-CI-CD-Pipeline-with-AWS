@@ -56,7 +56,7 @@ Security Group - EC2
 
 ## Phase 3: Setup the RDS Database
 
-###Provisioning
+### Provisioning
 
 <img width="819" alt="Screenshot 2024-09-19 at 7 26 48 PM" src="https://github.com/user-attachments/assets/c19b0505-74ee-4a6a-be5b-cd986619915c">
 
