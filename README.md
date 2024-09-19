@@ -53,4 +53,20 @@ Security Group - RDS
 Security Group - EC2
 <img width="1387" alt="Screenshot 2024-09-19 at 7 12 52 PM" src="https://github.com/user-attachments/assets/0c80eed5-1bb8-4f4e-a30e-9bd217bffdc1">
 
+
 ## Phase 3: Setup the RDS Database
+
+###Provisioning
+
+<img width="819" alt="Screenshot 2024-09-19 at 7 26 48 PM" src="https://github.com/user-attachments/assets/c19b0505-74ee-4a6a-be5b-cd986619915c">
+
+Setup The RDS Database with following configurations:
+
+- DB Instance Identifier: supplierdb
+- DB Engine Version: 8.0.35
+- DB Instance Class: db.t3.micro, 2 vCPUs, 1 GiB RAM, Up to 2,085 Mbps network
+- Storage: Type: General Purpose SSD (gp2), Allocated Storage: 20 GiB
+- Availability & Durability: Multi-AZ Deployment: No
+- Connectivity: Network Type: IPv4, Security Group: DBSecurityGroup
+
+## Now we have a database dumb of the required database, we need to configure it on the RDS.
