@@ -92,9 +92,15 @@ sudo apt install mysql-client -y
 
 To upload the sqldump file on the EC2 isntance, we first connect to the ec2 machine through our Local Machine using SSH Commands:
 ```
-ssh -i "<keyfilePath>" ubuntu@<publicIP>
+ssh -i "<Path to Pem File>" ubuntu@<publicIP>
 ```
 
+Second, Upload the Dump File to EC2
+```
+scp -i <"Path to Pem File"> path\to\your_dump_file.sql eubuntu@<public ip>:~
+```
+
+<img width="1438" alt="Screenshot 2024-09-19 at 8 44 42 PM" src="https://github.com/user-attachments/assets/ffd3d003-878c-4ad1-b241-718dd60554e4">
 
 
 
